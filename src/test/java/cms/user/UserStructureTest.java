@@ -15,6 +15,7 @@ class UserStructureTest {
 			assertEquals(user, Class.forName("cms.user.GuestUser").getSuperclass());
 		} catch (ClassNotFoundException e) {
 			fail("Crie a classe abstract cms.user.User");
+            throw e;
 		}
 	}
 
